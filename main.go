@@ -2,8 +2,8 @@ package main
 
 import (
 	"net/http"
+	"rest_api_golang_todo_crud/controllers"
 
-	"github.com/Sample_REST_APIs_App/controllers"
 	"github.com/gorilla/mux"
 )
 
