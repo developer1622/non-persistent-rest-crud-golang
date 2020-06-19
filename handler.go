@@ -54,6 +54,7 @@ func SayHello(w http.ResponseWriter, r *http.Request) {
 	writeResponse(w, "If you see this , server is running is fine !")
 }
 
+// this is util function.
 func writeResponse(w http.ResponseWriter, result interface{}) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(result)
