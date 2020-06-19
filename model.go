@@ -32,8 +32,8 @@ func Equals(t, t2 Task) bool {
 	return reflect.DeepEqual(t, t2)
 }
 
-// UpdateTask updates the task.
-func UpdateTask(id, name, desc string) Task {
+// ModelUpdateTask updates the task.
+func ModelUpdateTask(id, name, desc string) Task {
 	for _, task := range Tasks {
 		if task.ID == id {
 			task.Name = name
